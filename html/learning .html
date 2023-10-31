@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style type="text/css" media="all">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",Sans-Serif;
+            
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .digital-box{
+            width: 350px;
+            height: 100px;
+            background: #000;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-basis: 1;
+            justify-content: space-between;
+            
+            
+        }
+        .digital-box div{
+            width: calc(350px / 3);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 4rem;
+            color: cyan;
+            box-shadow: 1px 1px 1px 60px #33;
+        }
+        .digital-box div.sep span{
+            position: absolute;
+            right: 0px;
+            top: 17px;
+            font-size: 3rem;
+            color: green;
+            z-index: 333;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="digital-box">
+        <div class="hours sep">
+            <strong>00</strong> <span>:</span>
+        </div>
+        <div class="minutes sep">
+          <strong>00</strong><span>:</span>  
+        </div>
+        <div class="seconds">
+            <strong>00</strong>
+        </div>
+    </div>
+ 
+ <script src="../scripts/events.js"></script>   
+</body>
+</html>

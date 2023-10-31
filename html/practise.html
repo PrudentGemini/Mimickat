@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cakes $ parfeit</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="../css/Aisha.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Cakes <span>& parfeit</span>
+            </h1>
+
+            <span class="material-symbols-outlined" onclick="showHide()">
+                menu
+            </span>
+        </header>
+        <aside id="nav">
+            <h4>Cake & parfeit</h4>
+            <nav class="navigations">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <h3>Order</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                    <h3>About Us</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        settings_suggest
+                    </span>
+                    <h3>Services</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        contact_support
+                    </span>
+                    <h3>Contact Us</h3>
+                </a>
+            </nav>
+        </aside>
+        <section class="banner">
+            <div class="big-text">
+                <h4>Quality</h4>
+                <h1>Cakes & parfeit</h1>
+                <div class="line">
+                    <span></span>
+                </div>
+                <p>
+                    For Every Occassion And Events
+                </p>
+            </div>
+            <button>
+                Order
+            </button>
+        </section>
+        <section class="services">
+            <div class="bar">
+
+            </div>
+            <h4>OUR SERVICES</h4>
+            <p>
+                We offer the Best Quality Services you can ever imagine
+            </p>
+            <div class="content-box">
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <h3>
+                        instant home delivery
+                    </h3>
+                    <p>
+                        we offer An instant Home delivery services with no delay in delivery.
+                        In order to meet customer needs and wants,Home delivery are treated as priority.
+                        Home delivery is made available at a token of <u>$2</u> which makes it extremely a better option
+                    </p>
+                </div>
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <h3>
+                        24/7 Customer service
+                    </h3>
+                    <p>
+                        24/7 services is guranteed to all customers who are willing to have their cake at any time
+                    </p>
+                </div>
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        apartment
+                    </span>
+                    <h3>
+                        Home service
+                    </h3>
+                    <p>
+                        Did you feel the need to have a home service where 100% service is offered to you at your comfort ?....we gat you !
+                        With our home services,You can have any cakes pasteries of your choice
+                    </p>
+                </div>
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        support_agent
+                    </span>
+                    <h3>
+                        Customer care support 
+                    </h3>
+                    <p>
+                        Ever wanna log a complain or complement via phone calls ?
+                        Our 24/7 customer care support is always available for all logs and order
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function showHide() {
+            var side_bar = document.getElementById("nav").style;
+            if (side_bar.left == "-1000px") {
+                side_bar.left = "0px";
+            } else {
+                side_bar.left = "-1000px";
+            }
+        }
+    </script>
+</body>
+</html>

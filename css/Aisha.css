@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&family=Poppins&family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap');
+
+:root{
+    --link-color:#014023;
+    --main-bg-color:#ffffff;
+    --text-color:#333333;
+    /*--header-bgcolor:#014023;*/
+    --header-bgcolor:#000000;
+    --header-color:#ffffff;
+    --span-color:#ffd700;
+    --icon-color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HEADER section STARTS */
+
+header{
+    width: 100%;
+    height: 70px;
+    padding: 1rem;
+    background: var(--header-bgcolor);
+    color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header h1{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Poppins",Sans-Serif;
+    
+}
+header h1 span{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lobster",Sans-Serif;
+    color: var(--span-color);
+}
+
+header span{
+    font-size: 20px;
+}
+
+
+/*HEADER SECTION ENDS HERE */
+
+/* ASIDE and NAVIGATION STARTS HERE */
+
+aside{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: -1000px;
+    min-height: 95vh;
+    width: 60%;
+    background: #fffffe;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 3px 3px 30px rgba(0,0,0,0.75);
+    transition: .8s ease;
+}
+aside h4{
+    height: 130px;
+    border-bottom: 2px solid #333333;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Lobster";
+    text-align: bottom;
+    background: #000000;
+    color: #ffd700;
+    display: flex;
+    padding-top: 6rem;
+    
+    
+}
+aside .navigations{
+    padding: .0rem;
+    
+}
+
+.navigations a{
+    /*
+    margin-bottom: 1rem;
+    color: #fff;
+    width: 100%;
+    background: #000000;
+    padding: .5rem;
+    display: inline-block;
+    height: 2rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: 7px;*/
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem 0px 1.5rem 0px;
+    padding-left: 4px;
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    transition: .7s ease;
+    width: 100%;
+    align-items: center;
+    
+}
+.navigations a.active{
+    background: #000;
+    color: #fff;
+    border-radius: 9px;
+}
+.navigations a:hover{
+    margin-left: 1rem;
+}
+
+
+/*ASIDE and NAVIGATIONS ENDS HERE */
+
+
+/*BANNER STARTS HERE */
+
+.banner{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url("../images/cake.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.big-text{
+    width: 100%;
+    height: 200px;
+}
+
+.banner .big-text h4{
+    font-size: 2rem;
+    font-family: "Roboto",Sans-Serif;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+    
+}
+.banner .big-text h1{
+    font-size: 2.5rem;
+    font-family: "Lobster",Sans-Serif;
+    font-weight: 800;
+    color:#000;
+    letter-spacing: .7px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.banner .big-text p{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins",Sans-Serif;
+    font-stretch: 2px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.banner button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    
+    background: transparent;
+}
+.line{
+    margin: 1rem 0px 1rem 4.5rem;
+    width: 60%;
+    height: 3px;
+    background: #000;
+    text-align: center;
+    position: relative;
+}
+.line span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    top: -2px;
+    transform: rotate(45deg);
+}
+
+/*BANNER ENDS HERE */
+
+
+/*OUR SERVICES SECTION STARTS HERE */
+.services{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    flex-direction: column;
+}
+
+.services .bar{
+    background: #000;
+    width: 2px;
+    height: 14px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.services h4{
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.services p{
+    font-weight: 300;
+    color: #333;
+}
+
+.services .content-box{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+.services .content-box .box{
+   /* background: #fffff8;*/
+    width: 350px;
+    height: 270px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    transition: 1s ease;
+    position: relative;
+    overflow: hidden;
+    
+}
+.services .content-box .box:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transition: .2s ease;
+    z-index: -200;
+}
+.services .content-box .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .3s ease;
+    
+}
+.services .content-box .box:hover{
+    /*background: #000;*/
+    border-radius: 3px;
+}
+
+.services .content-box .box:hover span{
+    color: #ffd700;
+}
+.services .content-box .box:hover h3,
+.services .content-box .box:hover p{
+    color: #fff;
+}
+    
+
+.services .content-box .box span{
+    color: #000;
+    font-weight: bold;
+    margin: .5rem;
+    font-size: 2.5rem;
+}
+
+.services .content-box .box h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: #333;
+}
+
+.services .content-box .box p{
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: justify;
+    
+}

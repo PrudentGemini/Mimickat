@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/13ab4f84be.js">
+    </script>
+    <link rel="stylesheet" href="../css/stark.css">
+
+    <title>Document</title>
+    <style>
+
+        bdy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /*
+        body .dark{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(to right,rgba(0,0,0,.30), rgba(0,0,0,.3));
+        }*/
+        .upper-section{
+            width: 100%;
+            height: 70vh;
+            background: ;
+        }
+        .box {
+            width: 120px;
+            height: 120px;
+            border: 13px solid #E40C07;
+            border-radius: 50%;
+            outline: 2px solid rgba(255,255,255,.5);
+            outline-offset: -7px;
+            box-shadow: inset 2px 2px 30px 2px #000,
+            1px 1px 2px 0px #000,
+            -1px -1px 2px 0px #000;
+            background: #E40C07;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* }
+        }*/
+        }
+        .box i {
+            font-size: 2.5rem;
+            color: #750009;
+            font-weight: 700;
+            text-shadow: 1px 1px #000;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dark2">
+
+        </div>
+        <div class="upper">
+            
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-power-off"> </i>
+        </div>
+
+        <div class="dark" id="dark" onclick="clear()">
+
+        </div>
+        <!--<h1>css selectors</h1>
+            <h2>Article 1</h2>
+            <p>Lorem ipsum dolor fo la mam de sim</p>
+           <h2>Article 1</h2>
+            <p>Lorem ipsum dolor fo la mam de sim</p>
+           <h2>Article 1</h2>
+            <p>Lorem ipsum dolor fo la mam de sim</p>
+            -->
+        <div class="top">
+            <i class="fa-solid fa-bars menu i" onclick="showHide()"></i>
+        </div>
+
+        <div id="navigations" style="width:250px">
+
+            <div class="header">
+                <p>
+                    Stark VPN Reloaded
+                </p>
+                <p>
+                    v4.0
+                </p>
+            </div>
+
+            <div class="upper">
+
+                <p class="nav">
+                    <i class="fa-solid fa-user ic"></i>Custom settings
+                </p>
+
+                <p class="nav">
+                    <i class="fa-solid fa-toggle-off ic"></i>Toggle Animations
+                </p>
+
+            </div>
+
+            <p class="navs"b>
+                <i class="fa-solid fa-fingerprint ic"></i>HWID
+            </p>
+
+            <div class="upper">
+
+                <p class="nav">
+                    <i class="fa-solid fa-arrow-right-to-bracket ic"></i>Import settings
+                </p>
+
+                <p class="nav">
+                    <i class="fa-solid fa-arrow-right-to-bracket ic"></i>Export settings
+                </p>
+            </div>
+
+            <p class="navs">
+                <i class="fa-solid fa-spinner ic"></i>Update Tweaks
+            </p>
+
+            <p class="navs">
+                <i class="fa-brands fa-telegram ic"></i>Telegram Channel
+            </p>
+
+            <p class="navs">
+                <i class="fa-regular fa-comment-dots ic"></i>About
+            </p>
+
+            <p class="navs">
+                <i class="fa-solid fa-xmark ic"></i>Exit
+            </p>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var navs = document.getElementById("navigations").style;
+        var dark = document.getElementById("dark").style;
+        navs.left = "-1000px";
+        function showHide() {
+            if (navs.left == "-1000px") {
+                navs.left = "0px";
+                dark.display = "block";
+            } else {
+                navs.left = "-1000px";
+                dark.display = "none";
+            }
+            function clear() {
+                var navbar = document.getElementById("navigations").style;
+                alert(56667);
+                navbar.left = "-1000px";
+            }
+        }
+    </script
+    </body>
+</html>

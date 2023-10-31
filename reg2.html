@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
+<!--
+body {
+	background-image: url();
+	background-repeat: repeat;
+}
+body,td,th {
+	font-family: Courier New, Courier, monospace;
+	font-size: 18px;
+	color: #000000;
+}
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #00FF00;
+}
+-->
+    </style>
+</head>
+<body height="800%">
+    <h1 align=center><b><u><marquee>Registration Form</marquee></u></b></h1>
+    <hr>
+    <a href="test.html" class="style1">HomePage&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <hr>
+    <form>
+        <fieldset>
+            <legend><b>Personal info</b></legend>
+            <p>
+                <label for="first-name"><b>First name</b></label>&nbsp;
+                <input type="text" name="first-name" placeholder="Enter your first name" required maxlength="30"><br><br>
+
+                <label for="Surname"><b>Surname</b></label> &nbsp;
+                <input type="text" name="Surname" placeholder="Enter your Surname " required maxlength="30">
+            </p> 
+            <p>
+                <label for="last-name"><b>Last name</b></label>&nbsp;
+                <input type="text" name="Last-name" placeholder="Enter your last name" required maxlength="30">
+                <br>
+                <br>
+
+                <label for="other"><b>Other name</b></label>&nbsp;
+                <input type="text" name="other" placeholder="(optional)">
+            </p> 
+            <p>
+                <label for="Username"> <b>Username</b></label>&nbsp;
+                <input type="text" name="username" placeholder="select a username" required maxlength="30">
+                <br>
+                <br>
+
+                <label for="password"><b>Password</b></label>&nbsp;
+                <input type="password" name="password" placeholder="select a password" required maxlength="30">
+                <br>
+                <br>
+            </p>
+            <p>
+                <label for="Email"><b>Your Email address</b></label>&nbsp;
+                <input type="email" name="Email" value="" placeholder="enter a valid email accout" maxlength="30" required>
+            </p>
+            <p>
+                <label for="Gender"><b>Gender</b></label>&nbsp;
+                
+                
+                
+            </p>
+            <p>
+                <label for="DOB"><b>D.O.B</b></label>&nbsp;
+                <input type="number" maxlength="1" name="day" placeholder="1" required>
+
+                <select name=month>
+                    <option value="jan">JAN</option>
+                    <option value="feb">FEB</option>
+                    <option value="Mar">MAR</option>
+                    <option value="apr">APR</option>
+                    <option value="may">MAY</option>
+                    <option value="Jun" selected>JUN</option>
+                    <option value="jul">JULY</option>
+                    <option value="aug">AUG</option>
+                    <option value="sept">SEPT</option>
+                    <option value="oct">OCT</option>
+                    <option value="nov">NOV</option>
+                    <option value="dec">DEC</option>
+                </select>
+                <select name=year>
+                    <option selected>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                </select>
+            </p>
+            <p>
+                <label for="phone-number"><b>Phone Number</b></label>&nbsp;
+                <input type="text" maxlength="30" name="phone-number" placeholder="+234" required>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <p>
+                <label="for Falculty"><b>Faculty</b></label>
+                <input type="text" maxlength="30" name="Falculty" value="" required="required" placeholder="Your falculty">
+            </p>
+            <p>
+                <label for="department"><b>Dept.</b></label>
+                <input type="text" name="department" value="" maxlength="30" size="30" required="required" placeholder="enter your department">
+            </p>
+            <p>
+                <label for="post"><b>what best describes you</b></label>
+                <select name="post" required placeholder="who are you">
+                    <option value="pres">President</option>
+                    <option value="excos">Exco</option>
+                    <option value="reg">Regular student</option>
+                    <option value="other">Other</option>
+                    
+                </select>
+            </p>
+            <p>
+                <label for="skills"><b>Skills</b></label>
+                <textarea rows="10%" cols="20%">YOUR SKILLS</textarea>
+                
+                
+            </p>
+            <p>
+                <label for="qualification"><b>Your Qualification</b><br></label>
+                <input type="checkbox" checked="" name="Qualification" value="grad">Graduate<br>
+                <input type="checkbox" name="Qualification" value="pgrad">PostGraduate<br>
+                <input type="checkbox" name="Qualification" value="grad">Undergraduate<br>
+                <input type="checkbox"  name="Qualification" value="grad">None 
+            </p>
+            
+        </fieldset>
+        <fieldset>
+        				<legend>Additional program you can enroll for</legend>
+        				<table border="2" width="70%" cellspacing="0">
+        	<tr>
+        					<td colspan="3"><strong>Select any Other Program of your choice</strong></td>
+        	</tr>
+        								<tr>
+        		<td><input type="checkbox" name="checkbox" value=""></td>
+        		<td>Graphics Design</td>
+        		<td>Creation of flyers, Logo , 3D logos and lot more</td>
+        		</tr>
+        		<tr>
+        		<td><input type="checkbox" name="checkbox" value=""></td>
+        		<td>Digital Marketing</td>
+        		<td>To work online and make money at your convenient time</td>
+        		</tr>
+        		<tr>
+        			<td><input type="checkbox" name="checkbox" value=""></td>
+        				<td>Facebook & Instagram Ads</td>		
+        				<td>Learning to Run your business Ads on Facebook and Instagram</td>
+        		</tr>
+        				</table>
+   	  </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="confirm submissiom">
+        
+    </form>
+    <hr>
+    <footer>
+        <h4>CONTACT US</h4>
+        <p>phone number:+234 906 432 4534</p>
+        <p style="display:inline">Mail :</p>
+        <a href="mailto: falolaomowale2002@gmail.com">prudentgemini005@gmail.com</a>
+        <hr>
+        <marquee><b>........My HTML PORTFOLIO.....</b></marquee>
+        
+    </
+</body>
+</html>

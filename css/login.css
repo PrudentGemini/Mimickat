@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.banner{
+    background: #000;
+    color: #fff;
+}
+
+.banner h1 span{
+    color: cyan;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .login-section{
+    width: 95%;
+    height: 80%;
+    background: #fff;
+    box-shadow: 3px 4px 3px rgba(0,0,0,0.85);
+    padding: auto;
+}
+
+.container .login-section h1{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    /*text-transform: uppercase;*/
+}
+
+.container .login-section h1 span{
+    color: #ffd700;
+}
+
+.container .login-section .login{
+    margin-top: 2.5rem;
+}
+
+.container .login-section .sign{
+    display: block;
+    margin: 2rem 0 2rem 2px;
+    padding: .5rem;
+    color: #333;
+    font-size: 1rem;
+    height: 3rem;
+    width: 98%;
+    border: 1.5px solid #777;
+    border-radius: 4px;
+    
+}
+.check{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.sign-button{
+    
+    margin-top: 2rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --banner-bg:#387373;
+    --banner-text:#FFFFFF;
+    --background-color:#E4F2E7;
+    --text-color:#387373;
+    --nav-text-color:#93BFB7;
+    --nav-bg-color:#E4F2E7;
+    --link-color:#002333;
+    --link-font-size:10px;
+    --heading-size:18px;
+    --color:var(--link-color)
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',Sans-Serif;
+}
+a{
+    text-decoration: none;
+    color: var(--nav-bg-color);
+    font-size: var(--link-font-size);
+}
+
+li{
+    list-style-type: none;
+}
+h1{
+    font-size: var(--heading-size);
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--background-color);
+    margin: 1rem auto;
+}
+
+.banner{
+    padding: 0px 1rem;
+    background: var(--banner-bg);
+    color: var(--banner-text);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+}
+.banner h1 span{
+    color: var(--background-color);
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    transition: .4s ease;
+    
+}
+.banner h1:first-letter,.banner h1 span:first-letter{
+    font-size: calc(--heading-size + 10px);
+}
+.banner h1:hover{
+    font-size: 21px;
+    
+}
+.banner h1:hover span{
+    color: orange;
+}
+.mess{
+    width: 50px;
+    height: 25px;
+    color: #fff;
+    background: red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+.sidebar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: var(--link-color);
+    transition: .4s ease;
+    box-shadow: 0px 5px 3px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+.sidebar .cancel{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: var(--color);
+    font-size: 1rem;
+}
+
+.sidebar .cancel span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    color: var(--color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .navigations a{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0px 2rem ;
+    height: 50px;
+    width: 100%;
+    transition: .5s ease;
+    padding-left: .8rem;
+    border-bottom: 2px solid var(--background-color);
+    
+}
+.sidebar .navigations a.message{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.sidebar .navigations a:last-child{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.sidebar .navigations a:hover{
+    margin-left: 2rem;
+}

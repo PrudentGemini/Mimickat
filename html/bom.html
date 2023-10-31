@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        /*navigator.geolocation.getCurrentPosition((position)=>{
+            console.log(position);
+        });
+        var sentence = "a string you want to determine its words";
+
+        var Words = sentence.split(" ");
+
+        var realWord = Words.filter((word)=>{
+        if(word.length > 1)return true;
+        });
+        console.log(`the number of words in the sentence are ${realWord.length}`);*/
+        /*var data = {
+            name:"habib",
+            hobbies:["programming","reading","having fun"],
+            course:"computer science",
+            age:22
+        };
+        var converted = JSON.stringify(data);
+        console.log(converted)
+        
+        var submittedInfo = Object.keys(data);
+        function shoutMyName(name){
+            
+            if(new String(name) instanceof String){
+                console.log(name.repeat(3))
+            }
+        }
+        
+        function tester(name,time,...events){
+            console.log("hello "+name+ " your events are");
+            for(let data of events){
+                console.log(data);
+            }
+            console.log("[+] done in "+time+" mins");
+        }
+        
+        tester("habib",1000,"prayer","coding","eating","sleep");
+        
+        let events = ["habib",1000,"prayer","coding","eating","sleep"]
+        
+        tester(...events)
+        for(var data of events)console.log(data)
+        
+        console.log([1,2,...events,5,6,7])*/
+        /*mobile ={
+            name:"Envidia Laptop",
+            price:500000,
+            batteryLife:4,
+            fingerPrint:true,
+            touchScreen:true,
+            rotation:360,
+            showInfo: function(){
+                console.log(`
+                ${this.name} worth ${this.price}
+                Batter duration ==> ${this.batteryLife}hours,
+                fingerPrint Available ==> ${this.fingerPrint ? "Yes":"No"},
+                Touch Screen Available ${this.touchScreen ? "Yes" :"No"},
+                Rotation == ${this.rotation},
+                `)
+            }
+        }
+        
+        furniture = {
+            type:"3 sitter",
+            
+        }
+        var chair = Object.create(null);
+        console.log(Object.getPrototypeOf(chair))
+        
+        console.log(chair
+        console.log(Object.getPrototypeOf(furniture))
+        mobile.showInfo();*/
+        
+        /*function Rabbit(type){
+            this.type = type;
+        }
+        
+        var rabbit = new Rabbit("King Rabbit");
+        console.log(Rabbit.prototype == Object.getPrototypeOf(rabbit));
+        
+        console.log(rabbit.type in Rabbit.prototype)
+        
+        class phones{
+            constructor(type){
+                this.type = type
+            }
+            speak(){
+                console.log(this.type)
+            }
+            talk(){
+                console.log(57)
+            }
+        }
+        console.log(Object.getPrototypeOf(phones))
+        */
+        
+        class Paper{
+            burn(){
+                console.log("pfsssssss...!")
+            }
+        }
+        
+        class Rubber{
+            burn(){
+                console.log('koooommmm')
+            }
+        }
+        
+        class Tree{
+            burn(){
+                console.log("Burning like shit");
+            }
+            name(){
+                console.log("i am a tree ")
+            }
+        }
+        class Wood extends Tree {
+            burn(){
+                console.log("kpakpakpa")
+            }
+        }
+        
+        function burn(obj){
+            obj.burn()
+        }
+        
+        paper = new Paper();
+        rubber = new Rubber();
+        var wood = new Wood();
+        wood.name();
+        burn(wood)
+        
+        var data = {
+            get size(){
+                return 5
+            }
+        }
+        
+    </script>
+</body>
+</html>

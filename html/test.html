@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" title="css" type="text/css" />
+    <!--<script src="https://kit.fontawesome.com/13ab4f84be.js">
+        
+    </script>-->
+</head>
+<body>
+    <div class="dark" id="dark">
+        
+    </div>
+    <!--<h1>css selectors</h1>
+    <h2>Article 1</h2>
+    <p>Lorem ipsum dolor fo la mam de sim</p>
+   <h2>Article 1</h2>
+    <p>Lorem ipsum dolor fo la mam de sim</p>
+   <h2>Article 1</h2>
+    <p>Lorem ipsum dolor fo la mam de sim</p>
+    
+    -->
+     <div class="top">
+        <i class="fa-solid fa-bars menu i" onclick="showHide()"></i>
+    </div>
+    
+    <div id="navigations" onclick="showHide()">
+        
+        <div class="header">
+            <p>Stark VPN Reloaded</p>
+            <p>v4.0</p>
+        </div>
+        
+        <div class="upper">
+            
+            <p class="nav"><i class="fa-solid fa-user ic"></i>Custom settings</p>
+            
+            <p class="nav"><i class="fa-solid fa-toggle-off ic"></i>Toggle Animations</p>
+            
+        </div>
+        
+        <p class="navs"b><i class="fa-solid fa-fingerprint ic"></i>HWID</p>
+        
+        <div class="upper">
+            
+            <p class="nav"><i class="fa-solid fa-arrow-right-to-bracket ic"></i>Import settings</p>
+            
+            <p class="nav"><i class="fa-solid fa-arrow-right-to-bracket ic"></i>Export settings</p>
+        </div>
+        
+        <p class="navs"><i class="fa-solid fa-spinner ic"></i>Update Tweaks</p>
+        
+        <p class="navs"><i class="fa-brands fa-telegram ic"></i>Telegram Channel</p>
+        
+        <p class="navs"><i class="fa-regular fa-comment-dots ic"></i>About</p>
+        
+        <p class="navs"><i class="fa-solid fa-xmark ic"></i>Exit</p>
+
+    </div>
+    
+    
+    
+    <script type="text/javascript">
+    var navs = document.getElementById("navigations").style;
+    var dark = document.getElementById("dark").style;
+    navs.left = "-1000px";
+    function showHide(){
+        if(navs.left == "-1000px"){
+            navs.left = "0px";
+            dark.display = "block";
+        }
+        else{
+            navs.left = "-1000px";
+            dark.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

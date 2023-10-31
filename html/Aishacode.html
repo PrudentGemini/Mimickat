@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>we move</title>
+</head>
+<body>
+    <!--
+  <div style="border:2px solid black;">
+      <h1>MAGICS</h1>
+      <p>Abracadabra</p
+      <p>Dejavuu</p>
+      <p>Espayon</p>
+  </div>  
+  <br>
+    <table border=2>
+        <tr>
+            <th colspan="5">TIME TABLE</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>9am-10am</th>
+            <th>10am-11am</th>
+            <th>11am-12am</th>
+            <th>12pm-2pm</th>
+            <th>2pm-4pm</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2">Math</td>
+            <td rowspan="2">Math</td>
+            <td rowspan="6">BREAK</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>CSS</td>
+            <td>HTML</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Art</td>
+            <td>Civic</td>
+            <td>CSC</td>
+            <td>Java</td>
+        </tr>
+        <tr>
+        <th>Thursday</th>
+        <td>Python</td>
+        <td>Java</td>
+        <td>PHE</td>
+        <td>C++</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>Html</td>
+            <td>Javascript</td>
+            <td>B-tech</td>
+            <td>Python</td>
+         </tr>
+         <tr>
+             <th>Saturday</th>
+             <td>C</td>
+             <td>C++</td>
+             <td>Bio</td>= 
+             <td>PHP</td>
+         </tr>
+    </table>
+    -->
+    <script>
+        //automatic type conversion in JS
+        console.log(Number("name"));
+        console.log(0 && 7);
+        
+        var age = null;
+        console.log(age * 0);
+        console.log(typeof name);
+        
+        //var new = 10;
+        // this preceeding program prints out a chess board specifically an 8x8 board
+        
+        
+        var boardSize = 8;
+        for(var i = 1;i <= boardSize;i++){
+            var chessLine = "";
+            for(var j = 1; j <= boardSize; j++){
+                if((i + j)%2 == 0)
+                    var char = "#";
+                else
+                    var char = " ";
+                chessLine += char;
+            }
+            console.log(chessLine);
+            
+        }
+        
+        //lesson 3 -----> functions
+        // learning about functions
+        var makeNoise = function(){
+            console.log("BaaaaaaamBaaaaaam");
+        }
+        
+        var power = function(base, exponent){
+            var result = 1;
+            for(var count = 1; count <= exponent; count ++){
+                result *= base;
+            }
+            return (result);
+        }
+        console.log("\n");
+        makeNoise();
+        power(10,3);
+        
+        
+        //this function finds the root of a number 
+        var root = function(number,root=2){
+            for(var xRoot=1; xRoot <= parseInt(number/2); xRoot ++){
+                if(power(xRoot,root) == number){
+                    console.log(xRoot);
+                    break;
+                }
+            }
+        }
+        //learning about closure in JS
+        function showName(names){
+            var age = 134;
+            console.log("here is my name");
+            return function name(){
+                console.log("static age is "+age+" and name is "+names);
+            }
+        }
+        var names = ["habib","Erudite","Amoto","Oluwaseyi","Scholar","Boss"];
+        console.log(names.indexOf("Habib".toLowerCase()));
+        
+        var combinedNames = names.join(" ");
+        console.log(combinedNames);
+        
+        function tester(){
+            var argumentNumber = arguments.length;
+            console.log(`you passed me ${argumentNumber} arguments`)
+        }
+        tester(1,2,33,5,7,8);
+        
+        //using math.ceil can be used to make a number to be generated with the highest number included
+        
+        //while using math.floor will make the highest number to generated to be lesser than one 
+        console.log(Math.ceil(Math.random() * 10));
+        
+        
+        /*window.console.log(56);
+        for(var info in window){
+            console.log(info);
+        }*/
+        
+        location.replace("https://www.google.com");
+        
+        
+        
+        var url = "https://www.blestWays.edu.ng";
+        var ext = url.slice(url.lastIndexOf("."));
+        console.log(ext);
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text">
+    <script type="text/javascript" charset="utf-8">
+        var array = [1,2,3,4,5,5];
+        var inp = document.querySelector("input");
+        
+        var number = 12.5679;
+        console.log(number.toFixed(8));
+        
+        //using the date function without arguments
+        var date = new Date();
+        var timeout = setTimeout(()=>{
+            var interval = setInterval(()=>{
+                var date = new Date();
+                console.log(date.getSeconds());
+            
+                if(date.getSeconds() == 59)clearTimeout(interval);
+            },1000);
+        },5000)
+        
+        var theDate2 = new Date("2001-06-08");
+        var currentDate = new Date();
+        
+        var diff = new Date((currentDate - theDate2))
+        
+        document.write(diff.getFullYear())
+        console.log(theDate2.toDateString())
+        
+        function Item(name,price){
+            this.name = name;
+            this.price = price;
+            
+            
+        }
+        
+        var laptop = new Item("laptop",50000)
+        console.log(Object.getPrototypeOf(laptop))
+        console.log(laptop.name)
+        
+        
+        
+        var Item = {
+            category:"mobile",
+            manufacturer:"Hp",
+            showInfo:function(){
+                console.log(`${this.category} manufactured by ${this.manufacturer}`)
+            }
+        }
+        
+        var laptop = Object.create(Item);
+        console.log(laptop)
+        laptop.showInfo()
+        
+        //using classes
+        class Items{
+            constructor(name,product){
+                this.name = name;
+                this.product = product;
+                this.show = function(){
+                    console.log("voila")
+                }
+            }
+        };
+        
+        var phone = new Items("samsungs21 Ultra","samsung");
+        
+        console.log(phone.show())
+        
+    </script>
+</body>
+</html>
